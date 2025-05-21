@@ -3,7 +3,7 @@ from aiogram.filters.command import Command
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton
 import asyncio
 
-API_TOKEN = '7706460844:AAFsR2pDQyj_mYaE_h0yH_2w_ADGIILDZ9I'  # ← ЗАМЕНИТЕ на ваш актуальный токен
+API_TOKEN = '7706460844:AAEPRsV7oYre2Vz0faOvx44UQOs3JNwNfBw'  # ← ЗАМЕНИТЕ на ваш актуальный токен
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
