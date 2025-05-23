@@ -72,7 +72,7 @@ async def howtoget_handler(message: Message):
         "3. Повернуть направо на 초량중로6번길\n"
         "4. Пройти ~100 метров — здание справа 📦\n\n"
         "Если затрудняетесь найти — позвоните нам.\n\n"
-        "📲 <a href='https://wa.me/821040483829'>Связаться в WhatsApp</a>",
+        "📲 <a href='https://wa.me/821040483829'>Связаться в WhatsApp</a>\n"
         "🗺 <a href='https://maps.google.com/?q=부산광역시+중구+초량중로6번길+10'>Открыть в Google Maps</a>",
         parse_mode="HTML",
         reply_markup=back_menu
@@ -123,7 +123,21 @@ async def social_handler(message: Message):
 async def back_to_menu(message: Message):
     await message.answer("Вы вернулись в главное меню 👇", reply_markup=main_menu)
 
-# Запуск
+# Обработчик любого другого сообщения (fallback)
+@dp.message()
+async def fallback_handler(message: Message):
+    await message.answer(
+        "🤖 Я — автоматический бот компании <b>BEELIFECOS</b>.\n\n"
+        "Если у вас есть вопросы, напишите нашему менеджеру напрямую:\n\n"
+        "📞 <b>WhatsApp:</b> +82 10-8392-8865\n👉 <a href='https://wa.me/821083928865'>Открыть чат</a>\n"
+        "💬 <b>Telegram чат:</b> @toma_cos_bot\n"
+        "📢 <b>Новости компании:</b> <a href='https://t.me/+yWlqMAvb8PowNWJl'>Подписаться на канал</a>\n"
+        "📱 <b>Viber:</b> +82 10-8392-8865 (добавьте этот номер в Viber)\n\n"
+        "Спасибо за обращение! 😊",
+        parse_mode="HTML"
+    )
+
+# Запуск бота
 async def main():
     await dp.start_polling(bot)
 
