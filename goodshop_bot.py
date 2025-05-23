@@ -125,7 +125,7 @@ async def fallback_handler(message: Message):
     await message.answer(
         "🤖 Я — автоматический бот компании <b>BEELIFECOS</b>.\n\n"
         "Если у вас есть вопросы, напишите нашему менеджеру напрямую:\n\n"
-        "📞 <b>WhatsApp:</b> +82 10-8392-8865\n👉 <a href='https://wa.me/821083928865'>Открыть чат</a>\n"
+        "📞 <b>WhatsApp:</b> +82 10-4048-3029\n👉 <a href='https://wa.me/821040483829'>Открыть чат</a>\n"
         "💬 <b>Telegram чат:</b> @toma_cos_bot\n"
         "📢 <b>Новости компании:</b> <a href='https://t.me/+yWlqMAvb8PowNWJl'>Подписаться на канал</a>\n"
         "📱 <b>Viber:</b> +82 10-8392-8865 (добавьте этот номер в Viber)\n\n"
